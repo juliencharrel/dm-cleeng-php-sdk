@@ -1,4 +1,6 @@
 <?php
+namespace Cleeng\Exception;
+
 /**
  * Cleeng PHP SDK (http://cleeng.com)
  *

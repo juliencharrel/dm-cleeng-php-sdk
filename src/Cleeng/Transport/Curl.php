@@ -1,4 +1,6 @@
 <?php
+namespace Cleeng\Transport;
+
 /**
  * Cleeng PHP SDK (http://cleeng.com)
  *
