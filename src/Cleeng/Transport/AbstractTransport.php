@@ -1,5 +1,5 @@
 <?php
-namespace Cleeng\Entity;
+namespace Cleeng\Transport;
 
 /**
  * Cleeng PHP SDK (http://cleeng.com)
@@ -11,14 +11,15 @@ namespace Cleeng\Entity;
  * @package Cleeng_PHP_SDK
  */
 
-/**
- * Result from remote authentication API
- *
- * @link http://cleeng.com/open/v3/Reference/Customer_API
- */
-class Cleeng_Entity_RemoteAuth extends Cleeng_Entity_Base
+abstract class AbstractTransport
 {
-
-    protected $url;
+    /**
+     * Send data to API endpoint using CURL and return resulting string
+     *
+     * @param $url
+     * @param $data
+     * @return string
+     */
+    abstract public function call($url, $data);
 
 }

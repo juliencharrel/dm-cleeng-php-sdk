@@ -12,19 +12,11 @@ namespace Cleeng\Entity;
  */
 
 /**
- * Defines relationship between the customer and an offer.
- *
- * @link http://cleeng.com/open/v3/Reference/Customer_API
+ * Placeholder for boolean status for operations like updating customer e-mail
  */
-class Cleeng_Entity_AccessStatus extends Cleeng_Entity_Base
+class OperationStatus extends Base
 {
 
-    protected $accessGranted;
-
-    protected $grantType;
-
-    protected $expiresAt;
-
-    protected $socialCommissionUrl;
+    protected $success;
 
 }

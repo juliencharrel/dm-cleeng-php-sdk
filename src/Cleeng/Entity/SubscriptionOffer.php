@@ -12,14 +12,12 @@ namespace Cleeng\Entity;
  */
 
 /**
- * @link http://cleeng.com/open/v3/Reference/Single_Offer_API
+ * @link http://cleeng.com/open/v3/Reference/Subscription_Offer_API
  */
-class Cleeng_Entity_SingleOffer extends Cleeng_Entity_Base
+class SubscriptionOffer extends Base
 {
 
     protected $id;
-
-    protected $url;
 
     protected $price;
 
@@ -31,25 +29,11 @@ class Cleeng_Entity_SingleOffer extends Cleeng_Entity_Base
 
     protected $country;
 
-    protected $description;
-
-    protected $socialCommissionRate;
-
-    protected $contentType;
-
-    protected $contentExternalId;
-
-    protected $contentExternalData;
-
-    protected $contentAgeRestriction;
-
-    protected $tags;
+    protected $appliedOnTags;
 
     protected $publisherId;
 
+    protected $period;
+
     protected $active;
-
-    protected $createdAt;
-
-    protected $updatedAt;
 }

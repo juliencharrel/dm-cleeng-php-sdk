@@ -14,7 +14,7 @@ namespace Cleeng\Transport;
 /**
  * Helper class for performing HTTP requests to Cleeng API endpoint
  */
-class Cleeng_Transport_Curl extends Cleeng_Transport_AbstractTransport
+class Curl extends AbstractTransport
 {
 
     /**
@@ -79,7 +79,7 @@ class Cleeng_Transport_Curl extends Cleeng_Transport_AbstractTransport
      * Override/add options to curl handle
      *
      * @param array $options
-     * @return Cleeng_Transport_Curl
+     * @return Curl
      */
     public function setCurlOptions(array $options)
     {
@@ -96,7 +96,7 @@ class Cleeng_Transport_Curl extends Cleeng_Transport_AbstractTransport
      *
      * @param $url
      * @param $data
-     * @throws Cleeng_Exception_HttpErrorException
+     * @throws HttpErrorException
      * @return string
      */
     public function call($url, $data)
@@ -107,16 +107,16 @@ class Cleeng_Transport_Curl extends Cleeng_Transport_AbstractTransport
 
         $errno = curl_errno($ch);
         if ($errno != 0) {
-            throw new Cleeng_Exception_HttpErrorException("cURL error ($errno): " . curl_error($ch));
+            throw new HttpErrorException("cURL error ($errno): " . curl_error($ch));
         }
 
         $apiResponseCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         if ($apiResponseCode !== 200) {
-            throw new Cleeng_Exception_HttpErrorException('Invalid HTTP response code (' . $apiResponseCode . ').');
+            throw new HttpErrorException('Invalid HTTP response code (' . $apiResponseCode . ').');
         }
 
         if (!strlen($buffer)) {
-            throw new Cleeng_Exception_HttpErrorException('No data received.');
+            throw new HttpErrorException('No data received.');
         }
 
         return $buffer;

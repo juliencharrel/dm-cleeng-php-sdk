@@ -1,5 +1,5 @@
 <?php
-namespace Cleeng\Exception;
+namespace Cleeng\Entity;
 
 /**
  * Cleeng PHP SDK (http://cleeng.com)
@@ -11,6 +11,15 @@ namespace Cleeng\Exception;
  * @package Cleeng_PHP_SDK
  */
 
-class Cleeng_Exception_HttpErrorException extends Cleeng_Exception_RuntimeException
+/**
+ * @link http://cleeng.com/open/v3/Reference/Customer_API
+ */
+class CustomerSubscription extends Base
 {
+
+    protected $offerId;
+
+    protected $expiresAt;
+
+    protected $status;
 }

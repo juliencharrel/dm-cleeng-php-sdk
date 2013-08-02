@@ -12,13 +12,13 @@ namespace Cleeng\Entity;
  */
 
 /**
+ * Result from remote authentication API
+ *
  * @link http://cleeng.com/open/v3/Reference/Customer_API
  */
-class Cleeng_Entity_CustomerRental extends Cleeng_Entity_Base
+class RemoteAuth extends Base
 {
 
-    protected $offerId;
-
-    protected $expiresAt;
+    protected $url;
 
 }

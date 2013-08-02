@@ -30,12 +30,12 @@ class Base
      * Popuplate object with properties
      *
      * @param $data
-     * @throws Cleeng_Exception_InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function populate($data)
     {
         if(!is_array($data) && !$data instanceof Traversable) {
-            throw new Cleeng_Exception_InvalidArgumentException("Data must be an array or object implementing Traversable.");
+            throw new InvalidArgumentException("Data must be an array or object implementing Traversable.");
         }
         foreach ($data as $k => $v) {
             $this->$k = $v;
@@ -57,16 +57,16 @@ class Base
      *
      * @param $property
      * @return mixed
-     * @throws Cleeng_Exception_InvalidArgumentException
-     * @throws Cleeng_Exception_RuntimeException
+     * @throws InvalidArgumentException
+     * @throws RuntimeException
      */
     public function __get($property)
     {
         if ($this->pending) {
-            throw new Cleeng_Exception_RuntimeException("Object is not received from API yet.");
+            throw new RuntimeException("Object is not received from API yet.");
         }
         if (!property_exists($this, $property)) {
-            throw new Cleeng_Exception_InvalidArgumentException("Property '$property' does not exist'.");
+            throw new InvalidArgumentException("Property '$property' does not exist'.");
         }
         return $this->$property;
     }
@@ -76,7 +76,7 @@ class Base
      *
      * @param $property
      * @param $value
-     * @throws Cleeng_Exception_InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function __set($property, $value)
     {
@@ -87,13 +87,13 @@ class Base
      * __isset() magic method
      *
      * @param $property
-     * @throws Cleeng_Exception_RuntimeException
+     * @throws RuntimeException
      * @return bool
      */
     public function __isset($property)
     {
         if ($this->pending) {
-            throw new Cleeng_Exception_RuntimeException("Object is not received from API yet.");
+            throw new RuntimeException("Object is not received from API yet.");
         }
         return isset($this->$property);
     }

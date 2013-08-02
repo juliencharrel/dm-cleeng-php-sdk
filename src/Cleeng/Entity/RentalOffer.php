@@ -12,39 +12,46 @@ namespace Cleeng\Entity;
  */
 
 /**
- * @link http://cleeng.com/open/v3/Reference/Bundle_API
+ * @link http://cleeng.com/open/v3/Reference/Rental_Offer_API
  */
-class Cleeng_Entity_BundleOffer extends Cleeng_Entity_Base
+class RentalOffer extends Base
 {
 
     protected $id;
+
+    protected $url;
 
     protected $price;
 
     protected $applicableTaxRate;
 
-    protected $url;
-
     protected $title;
 
-    protected $description;
-
-    protected $socialCommissionRate;
+    protected $period;
 
     protected $currency;
 
     protected $country;
 
-    protected $offerIdList;
+    protected $description;
+
+    protected $socialCommissionRate;
+
+    protected $contentType;
+
+    protected $contentExternalId;
+
+    protected $contentExternalData;
+
+    protected $contentAgeRestriction;
+
+    protected $tags;
 
     protected $publisherId;
-
-    protected $period;
 
     protected $active;
 
     protected $createdAt;
 
     protected $updatedAt;
-
 }

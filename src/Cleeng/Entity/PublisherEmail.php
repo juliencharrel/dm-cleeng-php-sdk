@@ -1,5 +1,5 @@
 <?php
-namespace Cleeng\Exception;
+namespace Cleeng\Entity;
 
 /**
  * Cleeng PHP SDK (http://cleeng.com)
@@ -11,6 +11,13 @@ namespace Cleeng\Exception;
  * @package Cleeng_PHP_SDK
  */
 
-interface Cleeng_Exception_ExceptionInterface
+/**
+ *
+ * Publisher e-mail address
+ */
+class PublisherEmail extends Base
 {
+
+    protected $publisherEmail;
+
 }

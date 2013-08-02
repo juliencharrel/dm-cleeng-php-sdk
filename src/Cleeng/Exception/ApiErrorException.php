@@ -11,6 +11,6 @@ namespace Cleeng\Exception;
  * @package Cleeng_PHP_SDK
  */
 
-class Cleeng_Exception_InvalidJsonException extends Cleeng_Exception_RuntimeException
+class ApiErrorException extends RuntimeException
 {
 }

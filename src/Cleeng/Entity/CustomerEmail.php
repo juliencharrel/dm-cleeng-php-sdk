@@ -1,5 +1,4 @@
 <?php
-
 namespace Cleeng\Entity;
 
 /**
@@ -13,29 +12,11 @@ namespace Cleeng\Entity;
  */
 
 /**
- * @link http://cleeng.com/open/v3/Reference/Associates_API
+ * @link http://cleeng.com/open/v3/Reference/Customer_API
  */
-class Cleeng_Entity_Associate extends Cleeng_Entity_Base
+class CustomerEmail extends Base
 {
 
-    protected $id;
-
     protected $email;
-
-    protected $currency;
-
-    protected $locale;
-
-    protected $country;
-
-    protected $licenseType;
-
-    protected $firstName;
-
-    protected $lastName;
-
-    protected $siteName;
-
-    protected $publisherData;
 
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Cleeng\Entity;
+namespace Cleeng\Exception;
 
 /**
  * Cleeng PHP SDK (http://cleeng.com)
@@ -11,12 +11,6 @@ namespace Cleeng\Entity;
  * @package Cleeng_PHP_SDK
  */
 
-/**
- * @link http://cleeng.com/open/v3/Reference/Customer_API
- */
-class Cleeng_Entity_CustomerEmail extends Cleeng_Entity_Base
+class InvalidJsonException extends RuntimeException
 {
-
-    protected $email;
-
 }

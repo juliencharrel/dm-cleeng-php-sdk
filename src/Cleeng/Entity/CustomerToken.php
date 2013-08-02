@@ -12,25 +12,11 @@ namespace Cleeng\Entity;
  */
 
 /**
- * Provides information about customer.
- *
  * @link http://cleeng.com/open/v3/Reference/Customer_API
  */
-class Cleeng_Entity_Customer extends Cleeng_Entity_Base
+class CustomerToken extends Base
 {
 
-    protected $id;
-
-    protected $displayName;
-
-    protected $firstName;
-
-    protected $lastName;
-
-    protected $currency;
-
-    protected $locale;
-
-    protected $country;
+    protected $token;
 
 }

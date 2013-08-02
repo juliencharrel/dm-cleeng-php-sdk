@@ -12,28 +12,29 @@ namespace Cleeng\Entity;
  */
 
 /**
- * @link http://cleeng.com/open/v3/Reference/Subscription_Offer_API
+ *
  */
-class Cleeng_Entity_SubscriptionOffer extends Cleeng_Entity_Base
+class Publisher extends Base
 {
 
     protected $id;
 
-    protected $price;
-
-    protected $applicableTaxRate;
-
-    protected $title;
+    protected $email;
 
     protected $currency;
 
+    protected $locale;
+
     protected $country;
 
-    protected $appliedOnTags;
+    protected $licenseType;
 
-    protected $publisherId;
+    protected $firstName;
 
-    protected $period;
+    protected $lastName;
 
-    protected $active;
+    protected $siteName;
+
+    protected $publisherData;
+
 }

@@ -12,12 +12,25 @@ namespace Cleeng\Entity;
  */
 
 /**
+ * Provides information about customer.
  *
- * Publisher e-mail address
+ * @link http://cleeng.com/open/v3/Reference/Customer_API
  */
-class Cleeng_Entity_PublisherEmail extends Cleeng_Entity_Base
+class Customer extends Base
 {
 
-    protected $publisherEmail;
+    protected $id;
+
+    protected $displayName;
+
+    protected $firstName;
+
+    protected $lastName;
+
+    protected $currency;
+
+    protected $locale;
+
+    protected $country;
 
 }

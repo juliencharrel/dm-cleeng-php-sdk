@@ -1,4 +1,5 @@
 <?php
+
 namespace Cleeng\Entity;
 
 /**
@@ -12,15 +13,29 @@ namespace Cleeng\Entity;
  */
 
 /**
- * Placeholder for multi currency offer ID (looks like normal offer id without country
- * suffix: A123123123, S432432432, etc.)
- *
- * @link http://cleeng.com/open/v3/Reference
+ * @link http://cleeng.com/open/v3/Reference/Associates_API
  */
-class Cleeng_Entity_MultiCurrencyOffer extends Cleeng_Entity_Base
+class Associate extends Base
 {
 
-    protected $multiCurrencyOfferId;
+    protected $id;
 
-    protected $offers;
+    protected $email;
+
+    protected $currency;
+
+    protected $locale;
+
+    protected $country;
+
+    protected $licenseType;
+
+    protected $firstName;
+
+    protected $lastName;
+
+    protected $siteName;
+
+    protected $publisherData;
+
 }

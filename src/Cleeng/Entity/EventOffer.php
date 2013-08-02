@@ -14,7 +14,7 @@ namespace Cleeng\Entity;
 /**
  * @link http://cleeng.com/open/v3/Reference/Live_Event_API
  */
-class Cleeng_Entity_EventOffer extends Cleeng_Entity_Base
+class EventOffer extends Base
 {
 
     protected $id;

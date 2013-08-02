@@ -17,7 +17,7 @@
  */
 foreach (array(
             'Api.php',
-            'Base.php',
+            'Entity/Base.php',
             'Entity/Customer.php',
             'Entity/BundleOffer.php',
             'Entity/SingleOffer.php',

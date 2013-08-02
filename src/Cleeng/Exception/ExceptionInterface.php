@@ -1,5 +1,5 @@
 <?php
-namespace Cleeng\Transport;
+namespace Cleeng\Exception;
 
 /**
  * Cleeng PHP SDK (http://cleeng.com)
@@ -11,15 +11,6 @@ namespace Cleeng\Transport;
  * @package Cleeng_PHP_SDK
  */
 
-abstract class Cleeng_Transport_AbstractTransport
+interface ExceptionInterface
 {
-    /**
-     * Send data to API endpoint using CURL and return resulting string
-     *
-     * @param $url
-     * @param $data
-     * @return string
-     */
-    abstract public function call($url, $data);
-
 }

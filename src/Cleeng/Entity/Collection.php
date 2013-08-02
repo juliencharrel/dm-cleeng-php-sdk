@@ -14,7 +14,7 @@ namespace Cleeng\Entity;
 /**
  * Represents collection of objects returned by some API methods.
  */
-class Cleeng_Entity_Collection extends Cleeng_Entity_Base implements IteratorAggregate
+class Collection extends Base implements IteratorAggregate
 {
 
     protected $entityType;
@@ -23,7 +23,7 @@ class Cleeng_Entity_Collection extends Cleeng_Entity_Base implements IteratorAgg
 
     protected $totalItemCount;
 
-    public function __construct($entityType = 'Cleeng_Entity_Base')
+    public function __construct($entityType = 'Base')
     {
         parent::__construct();
         $this->entityType = $entityType;
@@ -33,15 +33,15 @@ class Cleeng_Entity_Collection extends Cleeng_Entity_Base implements IteratorAgg
      *
      *
      * @param $data
-     * @throws Cleeng_Exception_RuntimeException
+     * @throws RuntimeException
      */
     public function populate($data)
     {
         if (!isset($data['items'])) {
-            throw new Cleeng_Exception_RuntimeException("Cannot create collection - items are not available.");
+            throw new RuntimeException("Cannot create collection - items are not available.");
         }
         if (!isset($data['totalItemCount'])) {
-            throw new Cleeng_Exception_RuntimeException("Cannot create collection - total item count is not available.");
+            throw new RuntimeException("Cannot create collection - total item count is not available.");
         }
         $this->items = array();
         foreach ($data['items'] as $item) {
@@ -58,14 +58,14 @@ class Cleeng_Entity_Collection extends Cleeng_Entity_Base implements IteratorAgg
      * (PHP 5 &gt;= 5.0.0)<br/>
      * Retrieve an external iterator
      * @link http://php.net/manual/en/iteratoraggregate.getiterator.php
-     * @throws Cleeng_Exception_RuntimeException
+     * @throws RuntimeException
      * @return Traversable An instance of an object implementing <b>Iterator</b> or
      * <b>Traversable</b>
      */
     public function getIterator()
     {
         if ($this->pending) {
-            throw new Cleeng_Exception_RuntimeException("Object is not received from API yet.");
+            throw new RuntimeException("Object is not received from API yet.");
         }
         return new ArrayIterator($this->items);
     }

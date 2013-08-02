@@ -14,9 +14,11 @@ namespace Cleeng\Entity;
 /**
  * @link http://cleeng.com/open/v3/Reference/Customer_API
  */
-class Cleeng_Entity_CustomerToken extends Cleeng_Entity_Base
+class CustomerRental extends Base
 {
 
-    protected $token;
+    protected $offerId;
+
+    protected $expiresAt;
 
 }

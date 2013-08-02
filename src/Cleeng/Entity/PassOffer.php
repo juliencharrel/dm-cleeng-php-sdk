@@ -12,14 +12,12 @@ namespace Cleeng\Entity;
  */
 
 /**
- * @link http://cleeng.com/open/v3/Reference/Rental_Offer_API
+ * @link http://cleeng.com/open/v3/Reference/SeasonPass_API
  */
-class Cleeng_Entity_RentalOffer extends Cleeng_Entity_Base
+class PassOffer extends Base
 {
 
     protected $id;
-
-    protected $url;
 
     protected $price;
 
@@ -27,31 +25,15 @@ class Cleeng_Entity_RentalOffer extends Cleeng_Entity_Base
 
     protected $title;
 
-    protected $period;
-
     protected $currency;
 
     protected $country;
 
-    protected $description;
-
-    protected $socialCommissionRate;
-
-    protected $contentType;
-
-    protected $contentExternalId;
-
-    protected $contentExternalData;
-
-    protected $contentAgeRestriction;
-
-    protected $tags;
+    protected $appliedOnTags;
 
     protected $publisherId;
 
+    protected $period;
+
     protected $active;
-
-    protected $createdAt;
-
-    protected $updatedAt;
 }

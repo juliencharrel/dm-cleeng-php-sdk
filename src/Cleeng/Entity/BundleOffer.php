@@ -12,9 +12,9 @@ namespace Cleeng\Entity;
  */
 
 /**
- * @link http://cleeng.com/open/v3/Reference/SeasonPass_API
+ * @link http://cleeng.com/open/v3/Reference/Bundle_API
  */
-class Cleeng_Entity_PassOffer extends Cleeng_Entity_Base
+class BundleOffer extends Base
 {
 
     protected $id;
@@ -23,17 +23,28 @@ class Cleeng_Entity_PassOffer extends Cleeng_Entity_Base
 
     protected $applicableTaxRate;
 
+    protected $url;
+
     protected $title;
+
+    protected $description;
+
+    protected $socialCommissionRate;
 
     protected $currency;
 
     protected $country;
 
-    protected $appliedOnTags;
+    protected $offerIdList;
 
     protected $publisherId;
 
     protected $period;
 
     protected $active;
+
+    protected $createdAt;
+
+    protected $updatedAt;
+
 }
