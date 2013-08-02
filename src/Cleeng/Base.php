@@ -16,7 +16,7 @@ namespace Cleeng;
  *
  * Contains helper methods for populating entity with data retrieved from API.
  */
-class Cleeng_Entity_Base
+class Base
 {
 
     /**

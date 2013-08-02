@@ -134,7 +134,7 @@ class Api
         );
 
         if (null === $objectToPopulate) {
-            $objectToPopulate = new Cleeng_Entity_Base();
+            $objectToPopulate = new Base();
         }
 
         $this->pendingCalls[$id] = array(
