@@ -1,5 +1,5 @@
 {
-    "name": "cleeng/cleeng-php-sdk",
+    "name": "daily/dm-cleeng-php-sdk",
     "description": "PHP SDK for Cleeng API",
     "license": "BSD-3-Clause",
     "version": "3.0.0",
@@ -15,7 +15,7 @@
     "homepage": "http://cleeng.com/",
     "autoload": {
         "psr-0": {
-            "Cleeng": "src"
+            "Cleeng": "src/"
         }
     }
 }
