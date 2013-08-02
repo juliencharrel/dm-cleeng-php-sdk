@@ -1,5 +1,5 @@
 <?php
-namespace Cleeng;
+namespace Cleeng\Entity;
 
 /**
  * Cleeng PHP SDK (http://cleeng.com)
