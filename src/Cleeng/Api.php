@@ -1,4 +1,6 @@
 <?php
+
+namespace Cleeng;
 /**
  * Cleeng PHP SDK (http://cleeng.com)
  *
@@ -14,7 +16,7 @@
  *
  * @link http://cleeng.com/open/PHP_SDK
  */
-class Cleeng_Api
+class Api
 {
 
     /**
