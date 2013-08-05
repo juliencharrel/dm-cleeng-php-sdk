@@ -1,6 +1,21 @@
 <?php
 
 namespace Cleeng;
+
+use Cleeng\Entity\Base,
+    Cleeng\Entity\Associate,
+    Cleeng\Entity\Publisher,
+    Cleeng\Entity\CustomerToken,
+    Cleeng\Entity\RemoteAuth,
+    Cleeng\Entity\Customer;
+use Cleeng\Transport\Curl;
+use Cleeng\Exception\RuntimeException,
+    Cleeng\Exception\InvalidArgumentException,
+    Cleeng\Exception\ApiErrorException,
+    Cleeng\Exception\InvalidJsonException;
+
+
+// include_once( dirname(__FILE__).'/../../cleeng_api.php');
 /**
  * Cleeng PHP SDK (http://cleeng.com)
  *

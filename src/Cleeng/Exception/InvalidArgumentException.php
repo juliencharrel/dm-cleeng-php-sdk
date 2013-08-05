@@ -11,6 +11,6 @@ namespace Cleeng\Exception;
  * @package Cleeng_PHP_SDK
  */
 
-class InvalidArgumentException extends InvalidArgumentException implements ExceptionInterface
+class InvalidArgumentException extends \InvalidArgumentException implements ExceptionInterface
 {
 }

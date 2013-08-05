@@ -11,6 +11,6 @@ namespace Cleeng\Exception;
  * @package Cleeng_PHP_SDK
  */
 
-class RuntimeException extends RuntimeException implements ExceptionInterface
+class RuntimeException extends \RuntimeException implements ExceptionInterface
 {
 }

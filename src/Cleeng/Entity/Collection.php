@@ -14,7 +14,7 @@ namespace Cleeng\Entity;
 /**
  * Represents collection of objects returned by some API methods.
  */
-class Collection extends Base implements IteratorAggregate
+class Collection extends Base implements \IteratorAggregate
 {
 
     protected $entityType;

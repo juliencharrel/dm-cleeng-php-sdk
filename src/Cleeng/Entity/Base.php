@@ -1,6 +1,8 @@
 <?php
 namespace Cleeng\Entity;
 
+use Cleeng\Exception\InvalidArgumentException;
+use Cleeng\Exception\RuntimeException;
 /**
  * Cleeng PHP SDK (http://cleeng.com)
  *
