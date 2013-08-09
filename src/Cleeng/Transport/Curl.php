@@ -1,6 +1,9 @@
 <?php
 namespace Cleeng\Transport;
 
+
+use Cleeng\Exception\HttpErrorException;
+
 /**
  * Cleeng PHP SDK (http://cleeng.com)
  *
